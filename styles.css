@@ -1,0 +1,340 @@
+
+
+
+html {
+  overflow-y: scroll; /* Ensures a scrollbar can appear */
+  scrollbar-gutter: stable; /* Reserves space for the scrollbar, preventing layout shift */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Logo */
+
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+/* Links */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #7F7F7F;
+}
+
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+footer {
+  min-height: 50px;
+  background: #F8F8F8;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+
+/* The article fills all the space between header & footer */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 80%;
+  margin: auto;
+
+}
+
+/* titles are centered,
+ headings are left,
+ paragraphs */
+
+
+.t1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.t2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    text-align: left;
+}
+
+.h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+/* hyperlinks */
+
+a {
+    text-decoration: none;
+    color: #003F91;
+}
+
+a:hover{
+    color: grey;
+}
+
+
+
+.contact{
+    padding-top: 10px;
+    text-align:center;
+}
+
+/* flex container for home */
+
+.home_container{
+    display: flex;
+    align-items: center;
+    gap: 30 px;
+    overflow: auto;
+    padding-top: 0px;
+}
+
+
+.home_1{
+    width: 50%;
+}
+
+.home_2{
+    width:50%;
+    mid-width: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* flex container for leadership */
+
+.lead_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.lead{
+    display: flex;
+    flex-direction: column;
+}
+
+.lead img{
+    width: 100%;
+    aspect-ratio: 1 / 1;     
+    object-fit: contain;       
+    background: white;
+}
+
+.lead_caption{
+    padding: 6px;
+}
+
+.name{
+
+}
+
+.role{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.title{
+    font-size: 12px;
+}
+
+.past_pres{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.year{
+    padding-right: 5px;
+}
+
+.institution{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/* flex container for about */
+
+.about_container {
+  display: flex; /* Makes the children flex items arranged in a row by default */
+  gap: 0px; /* Adds space between the divs */
+  overflow: auto;
+}
+
+.about_1 {
+  width:80%;
+  padding-bottom: 20px;
+}
+
+.about_2 {
+    padding-left: 40px;
+    padding-top: 10px;
+    width:35%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    display:block;
+    margin: auto;
+    height: 150px;
+    width: 150px
+}
+
+.announcements {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contact_form {
+    text-align: center;
+    margin: auto;    
+}
+
+iframe {
+    width:100%;
+    height: 500px;
+}
+
+hr {
+    margin-left: 0;
+}
+
+/* for small screens */
+
+@media(max-width: 850px){
+
+    .home_container, .about_container{
+        flex-direction: column;
+    }
+    .home_1, .home_2, .about_1, .about_2 {
+        width:100%;
+    }
+
+    /* fix join */
+    .join{
+        width: 75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .announcements{
+        width: 75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* fix nav bar */
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .lead_container{
+        width: 60%
+    }
+
+    .past_pres{
+        width:100%;
+    }
+}
+
+@media(max-width:450px){
+    .join {
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto
+    } 
+
+    .announcements {
+        width: 100%;
+        margin-left:auto;
+        margin-right:auto
+    }
+
+}
+
+
+
