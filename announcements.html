@@ -5,6 +5,29 @@
     <title>Pittsburgh Roentgen Society</title> 
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+
+
+
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+function scroll_to_div(div_id)
+{
+ $('html,body').animate({scrollTop: $("#"+div_id).offset().top - 8},'7000');
+}
+
+
+</script>
+
+
 </head>
 
 <body>
@@ -22,54 +45,86 @@
         </ul>
     </nav>
 
-<main class = "announcements">
+<main>
 
-    <p class = "t1"> 2024 Fall Meeting </p>
 
-    <br>
+<!-- container for side by side -->
 
-    <img src = "2024_6.jpg" >
+<div class = "announcements">
 
-    <br>
+<!-- put the side bar here -->
 
-    <img src = "2024_5.jpg" >
+<div class = "side">
 
-    <br>
+    <div class = "sidebar" id = "sidebar">
 
-    <img src = "2024_4.jpg" >
+        <a class = "link" href = "#24fall" onclick="scroll_to_div('24fall')"> 2024 Fall </a>
 
-    <br>
+        <br>
+        <a class = "link" href = "#23fall" onclick="scroll_to_div('24fall')"> 2023 Fall </a>
+        
+    </div>
 
-    <img src = "2024_3.jpg" >
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <br>
+</div>
 
-    <img src = "2024_2.jpg" >
+<div class = "photos">
 
-    <br>
+    <div class = "24fall" id = "24fall"> 
+        <p class = "t2"> 2024 Fall Meeting </p> 
 
-    <img src = "2024_1.jpg" >
+        <img src = "2024_6.jpg" >
 
-    <br>
+        <br>
 
-    <p class = "t1"> 2023 Fall Meeting </p>
+        <img src = "2024_5.jpg" >
 
-    <img src = "2023_fall_4.png">
+        <br>
 
-    <br>
+        <img src = "2024_4.jpg" >
 
-    <img src = "2023_fall_3.png">
+        <br>
 
-    <br>
+        <img src = "2024_3.jpg" >
 
-    <img src = "2023_fall_1.png">
+        <br>
 
-    <br>
+        <img src = "2024_2.jpg" >
 
-    <img src = "2023_fall_2.png">
+        <br>
 
-    <br>
+        <img src = "2024_1.jpg" >
 
+        <br>
+
+    </div>
+
+    <div class = "23fall" id = "23fall">
+
+        <p class = "t2"> 2023 Fall Meeting </p>
+
+        <img src = "2023_fall_4.png">
+
+        <br>
+
+        <img src = "2023_fall_3.png">
+
+        <br>
+
+        <img src = "2023_fall_1.png">
+
+        <br>
+
+        <img src = "2023_fall_2.png">
+
+        <br>
+
+    </div>
+
+</div>
+
+</div>
 
 </main>
 
