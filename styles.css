@@ -100,12 +100,25 @@ main {
     font-weight: bold;
 }
 
-
-.t2 {
+.t2{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
     text-align: center;
+}
+
+
+.t2_mtg {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: lightgray;
+    padding: 6px 12px;
+    display: inline-block;
+    border: 10px solid white; 
+    border-radius: 16px;
+  
+ 
 }
 
 .h1 {
