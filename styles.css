@@ -336,6 +336,10 @@ hr {
         width:100%;
     }
 
+    .photos{
+        width: 100%
+    }
+
     /* fix join */
     .join{
         width: 75%;
