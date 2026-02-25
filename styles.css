@@ -167,22 +167,17 @@ a:hover{
 .home_container{
     display: flex;
     align-items: center;
-    gap: 30 px;
-    overflow: auto;
     padding-top: 0px;
 }
 
 
 .home_1{
     width: 50%;
+    padding-right: 30px;
 }
 
 .home_2{
-    width:50%;
-    mid-width: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+    width: 50%;
 }
 
 /* flex container for leadership */
@@ -334,6 +329,7 @@ hr {
     }
     .home_1, .home_2, .about_1, .about_2 {
         width:100%;
+        padding-right:0px;
     }
 
     .photos{
