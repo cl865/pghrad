@@ -330,6 +330,7 @@ hr {
     .home_1, .home_2, .about_1, .about_2 {
         width:100%;
         padding-right:0px;
+        padding-left:0px;
     }
 
     .photos{
