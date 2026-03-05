@@ -1,6 +1,4 @@
 
-
-
 html {
     scroll-behavior: smooth;
     overflow-y: scroll; /* Ensures a scrollbar can appear */
@@ -14,47 +12,38 @@ html {
     box-sizing: border-box;
 }
 
-/* Navbar container */
+/* format the top nav bar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1e1e1e;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
 }
 
-/* Logo */
-
-
-.logo {
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* Nav links */
-.nav-links {
+.nav-link {
     list-style: none;
     display: flex;
     gap: 16px;
 }
 
-/* Links */
-.nav-links a {
-    color: #ffffff;
+.nav-link a{
+    color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
-/* Hover effect */
-.nav-links a:hover {
-    color: #7F7F7F;
+
+.nav-link a:hover {
+    color: #7F7F7F
 }
 
-
+.active-logo a{
+    color: grey;
+}
 
 body {
   min-height: 100vh;
@@ -178,6 +167,7 @@ a:hover{
 
 .home_2{
     width: 50%;
+    padding-top: 20px;
 }
 
 /* flex container for leadership */
