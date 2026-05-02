@@ -346,6 +346,10 @@ hr {
         flex-direction: column;
     }
 
+    .main {
+        padding-bottom: 10px;
+    }
+
     .lead_container{
         width: 60%
     }
